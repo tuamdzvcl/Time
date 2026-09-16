@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1e1e2f, #151522);
+    color: #fff;
+    overflow: hidden;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    padding: 3rem 4rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(90deg, #00f2fe 0%, #4facfe 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.timezone-info {
+    font-size: 1rem;
+    color: #a0a0b0;
+    margin-bottom: 2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.time-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    border-radius: 15px;
+    min-width: 120px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.time {
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 1;
+    text-shadow: 0 0 20px rgba(79, 172, 254, 0.5);
+    font-variant-numeric: tabular-nums;
+}
+
+.label {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #8c8c9e;
+    margin-top: 0.5rem;
+    font-weight: 600;
+}
+
+.separator {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #4facfe;
+    animation: blink 1s step-start infinite;
+    padding-bottom: 2rem;
+}
+
+.message {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: #4facfe;
+    min-height: 1.5em;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
